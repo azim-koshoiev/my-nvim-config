@@ -95,27 +95,30 @@ Plug 'tpope/vim-speeddating'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'ryanoasis/vim-devicons'
-
-Plug 'preservim/nerdtree'
-
-Plug 'mattn/emmet-vim'
-
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+  \ 'for': ['html.erb', 'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 
 Plug 'sakshamgupta05/vim-todo-highlight'
 
 Plug 'tpope/vim-rails'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+Plug 'joshdick/onedark.vim'
+
+Plug 'tpope/vim-endwise'
+
 " vim-plug end, add plugins to &runtimepath
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#end()
 
 " activate bubblegum colorscheme
-colorscheme bubblegum-256-dark
-let g:airline_theme='bubblegum'
+" colorscheme bubblegum-256-dark
+" let g:airline_theme='bubblegum'
+
+colorscheme onedark
 

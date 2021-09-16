@@ -46,3 +46,5 @@ nmap cll yiwocll<Esc>p
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source ~/.config/nvim/plugins.vim
 
+set guifont=DroidSansMono\ Nerd\ Font\ 11
+
